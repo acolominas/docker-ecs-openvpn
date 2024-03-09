@@ -1,1 +1,1 @@
-# docker-ecs-openvpn
+# docker-ecs-wireguard
