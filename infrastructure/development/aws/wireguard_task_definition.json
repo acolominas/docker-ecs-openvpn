@@ -4,7 +4,7 @@
     "executionRoleArn": "arn:aws:iam::224322756201:role/aci-iamrole-wireguard-dev-euw1-01",
     "containerDefinitions": [
         {
-            "name": "dummy",
+            "name": "wireguard",
             "image": "procustodibus/wireguard",
             "cpu": 16,
             "memory": 16,
