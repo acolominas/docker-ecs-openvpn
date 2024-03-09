@@ -1,0 +1,28 @@
+{
+    "family": "aci-ecstsk-wireguard-dev-euw1-01",
+    "taskRoleArn": "arn:aws:iam::224322756201:role/aci-iamrole-wireguard-dev-euw1-01",
+    "executionRoleArn": "arn:aws:iam::224322756201:role/aci-iamrole-wireguard-dev-euw1-01",
+    "containerDefinitions": [
+        {
+            "name": "wireguard",
+            "image": "procustodibus/wireguard",
+            "cpu": 16,
+            "memory": 16,
+            "portMappings": [
+                {
+                    "containerPort": 51820,
+                    "hostPort": 51820,
+                    "protocol": "udp"
+                }
+            ],
+            "linuxParameters": {
+                "capabilities": {
+                    "add": ["NET_ADMIN"]
+                }
+            },
+            "essential": true,
+            "mountPoints": [],
+            "volumesFrom": []
+        }
+    ]
+}
