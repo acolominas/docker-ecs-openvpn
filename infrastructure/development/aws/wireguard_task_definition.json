@@ -6,8 +6,8 @@
         {
             "name": "wireguard",
             "image": "procustodibus/wireguard",
-            "cpu": 16,
-            "memory": 16,
+            "cpu": 256,
+            "memory": 512,
             "portMappings": [
                 {
                     "containerPort": 51820,
